@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Banana Game</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            background-color:  #181820;
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 99vw;
+            height: 99vh;
+        }
+
+        #root {
+            position: relative;
+        }
+
+        .score-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 154px;
+            height: 65px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="root">
+        <canvas id="canvas" tabindex="1"></canvas>
+        <div class="score-container">
+            Score:&nbsp;<span class='score'>0</span>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
